@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const req = require('express/lib/request');
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
@@ -96,6 +97,10 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/fuzzysearch', (req, res) => {
+  res.render('search')
 });
 
 module.exports = router;
