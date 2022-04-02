@@ -1,0 +1,59 @@
+
+
+:root{
+  background-color: #ecc488;
+  background-image: url('/stylesheets/images/background-sun.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:50%;
+} 
+
+.header {
+    padding: 2px;
+    text-align: center;
+    background-color:#F3D5C0;
+    color: rgb(19, 18, 18);
+    font-size: 30px;
+  }
+  .uk-button-danger {
+    background-color: #F5CEBE;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color:#F3D5C0 ;
+}
+.uk-comment-primary {
+  padding: 30px;
+  background-color: #fae5c4;
+  opacity: 0.9;
+}
+.uk-border-rounded {
+  border-radius: 20px;
+}
+
+.footer {
+  background-color: #ecc488;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+.uk-position-center {
+  top: calc(50% - var(--uk-position-margin-offset));
+  left: calc(50% - var(--uk-position-margin-offset));
+  --uk-position-translate-x: -50%;
+  --uk-position-translate-y: -50%;
+  transform: translate(var(--uk-position-translate-x),var(--uk-position-translate-y));
+  width: max-content;
+}
+.uk-card-default {
+  background-color: rgba(255, 255, 255, 0);
+  color: #666;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+
+}
+

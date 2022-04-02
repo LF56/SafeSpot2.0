@@ -5,44 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SafeSpot</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/css/uikit.min.css" />
   <link rel="stylesheet" href="/stylesheets/style.css">
-
 </head>
 
 <body>
-  <div class="wrapper">
 
     <header>
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">SafeSpot</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            {{#if loggedIn}}
-            <li> <a href="/dashboard">dashboard</a>
-              <button id="logout" class="btn-no-style">logout</button>
-            </li>
-            {{else}}
-            <li> <a href="/login">login</a></li>
-            {{/if}}
-          </ul>
-        </div>
-      </nav>
+      <div class="header">
+        <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left">
 
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#" class="brand-logo">SafeSpot</a></li>
+              {{#if loggedIn}}
+              <li class="uk-flex-right"><a href="/dashboard">dashboard</a></li>
+              <li class="uk-flex-right"><a id="logout" href="/">logout</a></li>
+              {{else}}
+              <li class="uk-flex-right"> <a href="/login">login</a></li>
+              {{/if}}
+            </ul>
 
+          </div>
+        </nav>
+      </div>
     </header>
+    
 
     <main>
       {{{ body }}}
     </main>
-    <footer>
+
+
+    <div class="footer">
       Thanks for visiting!
-    </footer>
-  </div>
+    </div>
+  
+
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
+
 </body>
 
 </html>
