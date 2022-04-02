@@ -9,7 +9,7 @@
     <div>
       <label for="post-content">content</label>
       <input id="post-content" name="post-content" />
-    
+
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
@@ -22,7 +22,6 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
   </ol>

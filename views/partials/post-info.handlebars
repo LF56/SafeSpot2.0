@@ -1,16 +1,3 @@
-{{!-- <article class="post">
-  <div class="title">
-    <a href="/post/{{id}}" target="_blank">{{title}}</a>
-    <span>{{content}}</span>
-
-  </div>
-  <div class="meta">
-    by {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-  </div>
-</article> --}}
-
 <article class="uk-comment uk-comment-primary uk-margin">
   <header class="uk-comment-header">
     <div class="uk-grid-medium uk-flex-middle" uk-grid>
@@ -26,4 +13,6 @@
   <div class="uk-comment-body">
     <span>{{content}}</span>
   </div>
+      <a href="/dashboard/edit/{{id}}" class="edit-link">Edit post</a>
+
 </article>
