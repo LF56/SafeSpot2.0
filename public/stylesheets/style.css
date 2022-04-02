@@ -54,6 +54,10 @@
   background-color: rgba(255, 255, 255, 0);
   color: #666;
   box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
-
 }
 
+.uk-comment-primary {
+  padding: 20px;
+  background-color: #fae5c4;
+  opacity: 0.9;
+}
