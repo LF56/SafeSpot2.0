@@ -1,12 +1,12 @@
 
 
 :root{
-  background-color: #ddb67d;
+  background-color: #ecc488;
   background-image: url('/stylesheets/images/background-sun.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width:100%;
-  height:auto
+  height:50%;
 } 
 
 .header {
@@ -26,18 +26,27 @@
 }
 .uk-comment-primary {
   padding: 30px;
-  background-color: #FDEFEF;
+  background-color: #fae5c4;
+  opacity: 0.9;
 }
 .uk-border-rounded {
   border-radius: 20px;
 }
 
 .footer {
-  background-color: #ddb67d;
+  background-color: #ecc488;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: black;
     text-align: center;
+}
+.uk-position-center {
+  top: calc(50% - var(--uk-position-margin-offset));
+  left: calc(50% - var(--uk-position-margin-offset));
+  --uk-position-translate-x: -50%;
+  --uk-position-translate-y: -50%;
+  transform: translate(var(--uk-position-translate-x),var(--uk-position-translate-y));
+  width: max-content;
 }
