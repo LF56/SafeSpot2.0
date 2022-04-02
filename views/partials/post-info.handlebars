@@ -1,12 +1,29 @@
-<article class="post">
+{{!-- <article class="post">
   <div class="title">
     <a href="/post/{{id}}" target="_blank">{{title}}</a>
     <span>{{content}}</span>
-  
+
   </div>
   <div class="meta">
     by {{user.username}} on {{format_date created_at}}
     |
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+  </div>
+</article> --}}
+
+<article class="uk-comment uk-comment-primary uk-margin">
+  <header class="uk-comment-header">
+    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+      <div class="uk-width-expand">
+        <h4 class="uk-comment-title uk-margin-remove"> <a href="/post/{{id}}" target="_blank">{{title}}</a></h4>
+        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+          <li>by {{user.username}} on {{format_date created_at}}</li>
+          <li><a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="uk-comment-body">
+    <span>{{content}}</span>
   </div>
 </article>

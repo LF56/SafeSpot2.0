@@ -1,12 +1,22 @@
-<div class="comments">
-  {{#each this}}
-  <section class="comment">
-    <div class="card-header">
-      {{user.username}} on {{format_date created_at}}
+<div class="uk-flex-column">
+   {{#each this}}
+   <div class="uk-flex uk-flex-center">
+<article class="uk-comment uk-comment-primary uk-margin uk-border-rounded">
+    <header class="uk-comment-header">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">{{user.username}}</a></h4>
+                <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                    <li><a href="#">{{format_date created_at}}</a></li>
+                    <li><a href="#">Reply</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="uk-comment-body">
+            {{comment_text}}
     </div>
-    <div class="text-card">
-      {{comment_text}}
-    </div>
-  </section>
-  {{/each}}
+</article>
 </div>
+ {{/each}}
+ </div>

@@ -1,0 +1,43 @@
+
+
+:root{
+  background-color: #ddb67d;
+  background-image: url('/stylesheets/images/background-sun.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:auto
+} 
+
+.header {
+    padding: 2px;
+    text-align: center;
+    background-color:#F3D5C0;
+    color: rgb(19, 18, 18);
+    font-size: 30px;
+  }
+  .uk-button-danger {
+    background-color: #F5CEBE;
+    color: #fff;
+    border: 1px solid transparent;
+}
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color:#F3D5C0 ;
+}
+.uk-comment-primary {
+  padding: 30px;
+  background-color: #FDEFEF;
+}
+.uk-border-rounded {
+  border-radius: 20px;
+}
+
+.footer {
+  background-color: #ddb67d;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
