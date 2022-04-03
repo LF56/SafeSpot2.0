@@ -25,17 +25,17 @@
 
 
   {{#if posts.length}}
-  <div class="uk-card uk-card-body">
-    <section>
+  <div class="uk-card uk-card-body uk-flex uk-grid-match">
+    <div class="uk-flex-center">
       <h2>Your Posts</h2>
       <ol>
         {{#each posts as |post|}}
-        <li>
+        <li class="uk-grid-row-medium ">
           {{> post-info post}}
         </li>
         {{/each}}
       </ol>
-    </section>
+    </div>
   </div>
   {{/if}}
 

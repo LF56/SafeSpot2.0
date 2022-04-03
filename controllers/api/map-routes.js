@@ -8,7 +8,8 @@ var mapRoute = `https://a.api.tomtom.com/map/1/tile/basic/main/1/0/0.png?key=${p
 router.post('/', (req, res) => {
     axios.get(mapRoute).then (
         data => 
-      res.send(data.data)
+      {res.send(data.config)}
+      
     )
   });
 
