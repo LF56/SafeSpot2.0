@@ -1,5 +1,8 @@
-<h1>Home Page</h1>
+{{> get-help}}
 
+
+{{#if loggedIn}}
+<h1>Home Page</h1>
 <div class="row">
    <ol class="post-list">
         {{#each posts as |post|}}
@@ -9,3 +12,4 @@
         {{/each}}
       </ol>
 </div>
+{{/if}}

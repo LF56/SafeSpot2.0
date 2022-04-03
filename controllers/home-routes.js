@@ -99,8 +99,8 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/fuzzysearch', (req, res) => {
-  res.render('search')
-});
+// router.get('/fuzzysearch', (req, res) => {
+//   res.render('search')
+// });
 
 module.exports = router;
