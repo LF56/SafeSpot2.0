@@ -1,31 +1,43 @@
-<section>
-  <h2>Create New Post</h2>
+<div class="uk-child-width-1-2@s" uk-grid>
+  <div class="uk-card uk-card-default uk-card-large uk-card-body">
+    <section>
+      <h2>Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-content">content</label>
-      <input id="post-content" name="post-content" />
+      <form class="new-post-form">
+        <div class="uk-margin">
+          <div class="uk-inline">
+            <label for="post-title"></label>
+            <input type="text" id="post-title" name="post-title" class="uk-padding-small" placeholder="Insert Title" />
+          </div>
+        </div>
 
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+        <div class="uk-margin">
+          <div class="uk-inline">
+            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: pencil"></span>
+            <label for="post-content">content</label>
+            <textarea id="post-content" class="uk-textarea" rows="5" name="post-content" /></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn">Create</button>
+      </form>
+    </section>
+  </div>
 
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
 
+  {{#if posts.length}}
+  <div class="uk-card uk-card-body">
+    <section>
+      <h2>Your Posts</h2>
+      <ol>
+        {{#each posts as |post|}}
+        <li>
+          {{> post-info post}}
+        </li>
+        {{/each}}
+      </ol>
+    </section>
+  </div>
+  {{/if}}
+
+</div>
 <script src="/javascript/add-post.js"></script>

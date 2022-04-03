@@ -21,7 +21,7 @@ async function mapFormHandler(event) {
                 'Content-Type': 'application/json'
             }
         }).then (
-            data => data.json()
+            data => data.blob()
         ).then (
             data => console.log(data)
         )
