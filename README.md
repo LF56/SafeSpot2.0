@@ -6,10 +6,8 @@
 ## Table of Content
 - Github link
 - Deployed Page
-- UserStory
+- Usage
 - Screenshots
-
-## Github link
 
 ## Deployed Page
 
@@ -18,7 +16,9 @@
 To install locally, clone or download the repo, then run npm install to install all dependencies. To start the server, simply run 'npm start'
 
 ## Screenshots
-![]
+![](public/stylesheets/images/background-sun.jpg)
+![](public/stylesheets/images/hotlineNEW.png)
+
 
 ## Installations
 - express
@@ -31,3 +31,5 @@ To install locally, clone or download the repo, then run npm install to install 
 - Leah Fox 
 - Carlos Vazquez
 - Marc St louis
+
+### ©️2022 Safespot, Inc 
