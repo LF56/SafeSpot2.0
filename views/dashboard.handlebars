@@ -1,9 +1,9 @@
 <div class="uk-child-width-1-2@s" uk-grid>
-  <div class="uk-card uk-card-default uk-card-large uk-card-body">
-    <section>
-      <h2>Create New Post</h2>
+  <div class="uk-card uk-card-default  uk-card-large uk-card-body">
+   
+      <h2 class="uk-heading-line uk-text-center">Create New Post</h2>
 
-      <form class="new-post-form">
+      <form class="new-post-form uk-position-center uk-padding-remove-top">
         <div class="uk-margin">
           <div class="uk-inline">
             <label for="post-title"></label>
@@ -15,23 +15,24 @@
           <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: pencil"></span>
             <label for="post-content">content</label>
-            <textarea id="post-content" class="uk-textarea" rows="5" name="post-content" /></textarea>
+            <textarea id="post-content" class="uk-textarea" rows="5" name="post-content"></textarea>
           </div>
         </div>
         <button type="submit" class="btn">Create</button>
       </form>
-    </section>
+    
   </div>
 
 
   {{#if posts.length}}
   <div class="uk-card uk-card-body uk-flex uk-grid-match">
     <div class="uk-flex-center">
-      <h2>Your Posts</h2>
+      <h2 class="uk-heading-line uk-text-center">Your Posts</h2>
       <ol>
         {{#each posts as |post|}}
         <li class="uk-grid-row-medium ">
           {{> post-info post}}
+          
         </li>
         {{/each}}
       </ol>
@@ -39,5 +40,5 @@
   </div>
   {{/if}}
 
-</div>
+
 <script src="/javascript/add-post.js"></script>
