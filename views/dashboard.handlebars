@@ -1,13 +1,13 @@
-<div class="uk-child-width-1-2@s" uk-grid>
-  <div class="uk-card uk-card-default uk-card-large uk-card-body">
-    <section>
-      <h2>Create New Post</h2>
-
-      <form class="new-post-form">
+<div class="uk-child-width-expand@s uk-text-center " uk-grid>
+  <div>
+    <div class="uk-card uk-card-default uk-card-body ">
+      <div class="uk-margin-top">
+      <h2 class="uk-heading-line uk-text-center">Create New Post</h2>
+      <form class="new-post-form ">
         <div class="uk-margin">
           <div class="uk-inline">
             <label for="post-title"></label>
-            <input type="text" id="post-title" name="post-title" class="uk-padding-small" placeholder="Insert Title" />
+            <input type="text" id="post-title" name="post-title" class="uk-padding-small uk-form-large" placeholder="Insert Title" />
           </div>
         </div>
 
@@ -15,27 +15,32 @@
           <div class="uk-inline">
             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: pencil"></span>
             <label for="post-content">content</label>
-            <textarea id="post-content" class="uk-textarea" rows="5" name="post-content" /></textarea>
+            <textarea id="post-content" class="uk-textarea uk-border-rounded" rows="10" name="post-content"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn">Create</button>
+        <button type="submit" class="btn uk-button-large uk-button-danger">CREATE</button>
       </form>
-    </section>
+      </div>
+
+    </div>
   </div>
 
 
+
+
   {{#if posts.length}}
-  <div class="uk-card uk-card-body">
-    <section>
-      <h2>Your Posts</h2>
+  <div class="uk-card uk-card-body uk-flex uk-grid-match">
+    <div class="uk-flex-center">
+      <h2 class="uk-heading-line uk-text-center">Your Posts</h2>
       <ol>
         {{#each posts as |post|}}
-        <li>
+        <li class="uk-grid-row-medium ">
           {{> post-info post}}
+
         </li>
         {{/each}}
       </ol>
-    </section>
+    </div>
   </div>
   {{/if}}
 

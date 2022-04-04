@@ -1,6 +1,83 @@
 {{!-- maka a map with search --}}
 {{!-- search for resources nearby --}}
 
-<h1>Map Will Be Here</h1>
-<button type="submit" class="btn" onclick="mapFormHandler(event)">Create</button>
+{{!-- <h1>Map Will Be Here</h1> --}}
+
+{{!-- <button class="btn" onclick="mapFormHandler(event)">Create</button> --}}
+{{!-- <img src="https://a.api.tomtom.com/map/1/tile/basic/main/1/0/0.png?key=APIKEYHERE&tileSize=512" /> --}}
+
+
+<div class="uk-child-width-1-2@s" uk-grid>
+   <div uk-slideshow="autoplay: true ">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+         <ul class="uk-slideshow-items uk-position-relative">
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/MV9ze/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/aGV5IHdhcnJpb3IsIGtlZXAgZ29pbmc/sunnyspells-regular.png"
+                  alt="Cute fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/Dj83/eyJyIjoiZnMiLCJoIjo3NCwidyI6MjAwMCwiZnMiOjM3LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bm8gb25lIGlzIHlvdSBhbmQgdGhhdCBpcyB5b3VyIHBvd2Vy/marvel-regular.png"
+                  alt="Cute fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/EaZv4/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eW91J3JlIG5vdCB0b28gc21hbGwgdG8gZG8gZ3JlYXQgdGhpbmdz/winter-princess.png"
+                  alt="Handwriting fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/JR47m/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eW91J3JlIHN0cm9uZ2VyIHRoYW4geW91IGtub3c/greatly-desired-regular.png"
+                  alt="Handwriting fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/ALxqx/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/ZG9uJ3QgZXZlciBkb3VidCB5b3VyIHdvcnRo/creatine-youth-regular.png"
+                  alt="Lettering fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/eZoYg/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/bGl0dGxlIGJ5IGxpdHRsZSBiZWNvbWVzIGEgbG90/violante.png"
+                  alt="Calligraphy fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/ZVGg8/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/dGhlIHN0cnVnZ2xlIGlzIHBhcnQgb2YgdGhlIHN0b3J5/love-mom.png"
+                  alt="Design fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/lgPK0/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/dHJ1c3QgdGhlIGpvdXJuZXk/orange-slices.png"
+                  alt="Cute fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/lgPK0/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/eW91IGFyZSBwb3dlcmZ1bA/orange-slices.png"
+                  alt="Cute fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/eZOn3/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/YWN0dWFsbHksIEkgY2Fu/party-confetti-regular.png"
+                  alt="Fun fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+            <li>
+               <img
+                  src="https://see.fontimg.com/api/renderfont4/owA1o/eyJyIjoiZnMiLCJoIjoxMjIsInciOjIwMDAsImZzIjo2MSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/c3Rvcm1zIGRvbid0IGxhc3QgZm9yZXZlcg/catchy-melody-regular.png"
+                  alt="Cartoon fonts" class="uk-position-center uk-object-scale-down" uk-cover>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <div class="uk-card">
+      <div class="uk-card uk-card-large uk-card-body">
+         <a href="https://suicidepreventionlifeline.org/talk-to-someone-now/"><img src="/stylesheets/images/hotlineNEW.png" width="1800" height="1200" alt=""></a>
+      </div>
+   </div>
+</div>
+
+
+
 <script src="/javascript/fuzzysearch.js"></script>

@@ -1,4 +1,4 @@
-<article class="uk-comment uk-comment-primary uk-margin uk-border-rounded " >
+<article class="uk-comment uk-comment-primary uk-margin uk-border-rounded ">
     <header class="uk-comment-header">
         <div class="uk-grid-medium uk-flex-middle uk-border-rounded" uk-grid>
             <div class="uk-width-expand">
@@ -13,19 +13,19 @@
 <form id="comment-form" class="comment-form">
 
 
-<div class="uk-child-width-1-2@s " uk-grid>
-    <div class="uk-inline">
-        <div class="uk-card uk-card-default uk-card-small uk-card-body uk-height-match">
-            <h3>Add A Comment</h3>
-    <textarea name="comment-body" id="comment-body" rows="5" placeholder="Add Comment Here" ></textarea>
-        <button class="uk-button uk-button-danger uk-position-center" type="submit"> ADD COMMENT</button>
+    <div class="uk-child-width-1-2@s " uk-grid>
+        <div class="uk-inline">
+            <div class="uk-card uk-card-default uk-card-small uk-card-body uk-height-match">
+                <h3>Add A Comment</h3>
+                <textarea name="comment-body" id="comment-body" rows="5" placeholder="Add Comment Here"></textarea>
+                <button class="uk-button uk-button-danger uk-position-center" type="submit"> ADD COMMENT</button>
+            </div>
         </div>
-    </div>
 
-{{/if}}
+        {{/if}}
 
-{{> comments post.comments}}
+        {{> comments post.comments}}
 
-{{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-{{/if}}
+        {{#if loggedIn}}
+        <script src="/javascript/comment.js"></script>
+        {{/if}}

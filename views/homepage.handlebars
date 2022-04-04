@@ -1,8 +1,9 @@
-{{> get-help}}
-
-
+<div class="uk-container uk-container-xsmall">
+          {{> get-help}}
+</div>
+ 
 {{#if loggedIn}}
-<h1>Home Page</h1>
+<h1 class="uk-heading-line uk-text-center">Thoughts From Others</h1>
 <div class="row">
    <ol class="post-list">
         {{#each posts as |post|}}
