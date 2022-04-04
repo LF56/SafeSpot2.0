@@ -10,22 +10,33 @@
 
 
 {{#if loggedIn}}
-<form id="comment-form" class="comment-form">
-
-
-    <div class="uk-child-width-1-2@s " uk-grid>
-        <div class="uk-inline">
-            <div class="uk-card uk-card-default uk-card-small uk-card-body uk-height-match">
-                <h3>Add A Comment</h3>
-                <textarea name="comment-body" id="comment-body" rows="5" placeholder="Add Comment Here"></textarea>
-                <button class="uk-button uk-button-danger uk-position-center" type="submit"> ADD COMMENT</button>
+<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+            <div class="uk-margin-top">
+                <form id="comment-form" class="comment-form">
+                            <div class="uk-card uk-card-large uk-position-right uk-card-body ">
+                                <h3>Add A Comment</h3>
+                                <textarea name="comment-body" id="comment-body" class="uk-textarea uk-border-rounded" rows="10" cols="100"
+                                    placeholder="Add Comment Here"></textarea>
+                                <button class="uk-button uk-button-danger uk-position-default" type="submit"> ADD
+                                    COMMENT</button>
+                            </div>
+                     
+                        {{/if}}
+                </form>
             </div>
         </div>
+  
 
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+        <div class="uk-flex-center">
+            {{> comments post.comments}}
+            {{#if loggedIn}}
+        </div>
         {{/if}}
 
-        {{> comments post.comments}}
+    </div>
+</div>
 
-        {{#if loggedIn}}
-        <script src="/javascript/comment.js"></script>
-        {{/if}}
+<script src="/javascript/comment.js"></script>
