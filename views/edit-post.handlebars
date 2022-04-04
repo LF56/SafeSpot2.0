@@ -1,5 +1,5 @@
 <div>
-  <a  class="uk-button-danger" href="/dashboard"> &larr; Back to dashboard</a>
+  <a class="uk-button-danger" href="/dashboard"> &larr; Back to dashboard</a>
 </div>
 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
   <div>
@@ -10,32 +10,28 @@
       <form class="edit-post-form">
         <div>
           <h3>Title</h3>
-          <input name="post-title"  class="uk-padding-small" type="text" value="{{post.title}}" />
+          <input name="post-title" id="post-title" class="uk-padding-small uk-border-rounded" type="text" value="{{post.title}}" />
           <h3>Content</h3>
-          <textarea  class="uk-textarea" name="post-content" rows="10" type="text" value="{{post.content}}" /></textarea>
+          <textarea class="uk-textarea uk-border-rounded" id="post-content" name="post-content" rows="10" type="text"
+            value="{{post.content}}" /></textarea>
 
         </div>
         <div>
-        |
+          |
 
         </div>
         <button type="submit" class="uk-button-danger">Save post</button>
-        <button type="button" class="delete-post-btn uk-button-danger">Delete post</button>
+        <button type="button" class="delete-post-btn uk-button-danger" id="delete-post-btn">Delete post</button>
       </form>
     </div>
   </div>
   <div>
     <div class="uk-card uk-card-default uk-card-body">
-{{> comments post.comments}}
+      {{> comments post.comments}}
     </div>
   </div>
-  
+
 </div>
-
-
-
-
-
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
