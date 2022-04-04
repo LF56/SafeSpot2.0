@@ -83,3 +83,9 @@ h1 {
 right: 50;
 
 }
+.uk-navbar-nav>li>a {
+  color: black;
+  text-transform: uppercase;
+  transition: .1s ease-in-out;
+  transition-property: color,background-color;
+}
