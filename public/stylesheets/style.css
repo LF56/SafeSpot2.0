@@ -66,6 +66,7 @@ h1 {
 
 .uk-comment-primary {
   padding: 20px;
+  margin-left: 30px;
   background-color: #fae5c4;
   opacity: 0.9;
 }
@@ -87,5 +88,7 @@ right: 50;
   color: black;
   text-transform: uppercase;
   transition: .1s ease-in-out;
+  font-size: large;
   transition-property: color,background-color;
+  font-family:'Lato', sans-serif;;
 }

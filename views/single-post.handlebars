@@ -1,41 +1,24 @@
-<article class="uk-comment uk-comment-primary uk-margin uk-border-rounded uk-width-* ">
-    <header class="uk-comment-header">
-        <div class="uk-grid-medium uk-flex-middle uk-border-rounded" uk-grid>
-            <div class="uk-width-expand">
-                {{> post-info post}}
-            </div>
+<div class="uk-child-width-1-3@s uk-padding top" uk-grid>
+    <div>
+        <div class="uk-panel uk-margin-top  uk-object-scale-down">
+            {{> post-info post}}
         </div>
-    </header>
-</article>
-
-
-{{#if loggedIn}}
-<div class="uk-child-width-expand@s uk-text-center" uk-grid>
-    
-        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-            <div class="uk-margin-top">
-                <form id="comment-form" class="comment-form">
-                            <div class="uk-card uk-card-large uk-position-right uk-card-body ">
-                                <h3>Add A Comment</h3>
-                                <textarea name="comment-body" id="comment-body" class="uk-textarea uk-border-rounded" rows="10" cols="100"
-                                    placeholder="Add Comment Here"></textarea>
-                                <button class="uk-button uk-button-danger uk-position-default" type="submit"> ADD
-                                    COMMENT</button>
-                            </div>
-                     
-                        {{/if}}
-                </form>
-            </div>
+    </div>
+    <div>
+        <div class="uk-panel uk-margin-top  uk-object-scale-down">
+            <h3 class="uk-text-center">Add A Comment</h3>
+            <textarea name="comment-body" id="comment-body" class="uk-textarea uk-border-rounded" rows="10" cols="100"
+                placeholder="Add Comment Here"></textarea>
+            <button class="uk-button uk-button-danger uk-position-default" type="submit"> ADD
+                COMMENT</button>
         </div>
-  
-
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
-        <div class="uk-flex-center">
+    </div>
+    <div>
+        <div class="uk-panel uk-margin-top  uk-object-scale-down">
             {{> comments post.comments}}
             {{#if loggedIn}}
         </div>
         {{/if}}
-
     </div>
 </div>
 

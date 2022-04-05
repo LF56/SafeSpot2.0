@@ -1,11 +1,11 @@
-<div class="uk-container uk-container-xsmall uk-width-*">
+<div class="uk-container uk-container-xsmall uk-width-responsive">
           {{> get-help}}
 </div>
  
 {{#if loggedIn}}
 <h1 class="uk-heading-line uk-text-center">Thoughts From Others</h1>
 <div class="row uk-margin-medium-left">
-   <ol class="post-list">
+   <ol class="post-list uk-child-width-1-1@m" uk-grid>
         {{#each posts as |post|}}
         <li>
           {{> post-info post }}
