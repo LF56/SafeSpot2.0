@@ -44,6 +44,7 @@ h1 {
 .footer {
   background-color: #ecc488;
     position: fixed;
+    height: 40px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -51,6 +52,11 @@ h1 {
     text-align: center;
     display: flex;
   justify-content: space-between;
+}
+
+marquee {
+  font-size: x-large;
+  font-family:'Lato', sans-serif;;
 }
 
 .uk-position-center {
@@ -95,14 +101,10 @@ right: 50;
   transition-property: color,background-color;
   font-family:'Lato', sans-serif;;
 }
-/* .uk-input, .uk-select, .uk-textarea {
-  max-width: 100%;
-  width: 100%;
-  border: 0 none;
-  padding: 0 10px;
-  background-color: #fae5c4;
-  color: #666;
-  border: 1px solid #e5e5e5;
-  transition: .2s ease-in-out;
-  transition-property: color,background-color,border;
-} */
+.uk-grid {
+  display:center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
