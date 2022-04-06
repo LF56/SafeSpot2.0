@@ -11,6 +11,8 @@
 
 ## Deployed Page
 
+https://safespotblog.herokuapp.com/dashboard/
+
 ## Usage
 
 To install locally, clone or download the repo, then run npm install to install all dependencies. To start the server, simply run 'npm start'
