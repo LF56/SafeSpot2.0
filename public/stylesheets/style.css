@@ -53,6 +53,7 @@ h1 {
     display: flex;
   justify-content: space-between;
 }
+
 marquee {
   font-size: x-large;
   font-family:'Lato', sans-serif;;

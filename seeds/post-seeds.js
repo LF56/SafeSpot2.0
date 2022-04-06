@@ -3,6 +3,7 @@ const { Post } = require('../models');
 const postdata = [
   {
     title: 'Career change ',
+
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet elementum leo. Fusce eget elit dictum, cursus dolor eget, ornare ipsum. Nunc in neque euismod, volutpat magna eget, ultrices orci. Maecenas vitae eros id justo molestie pretium sed at dolor. Nulla at nisl eget nisi sollicitudin aliquet.',
     user_id: 10
   },
@@ -13,6 +14,7 @@ const postdata = [
   },
   {
     title: 'The day they stormed the Nations capital.',
+
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet elementum leo. Fusce eget elit dictum, cursus dolor eget, ornare ipsum. Nunc in neque euismod, volutpat magna eget, ultrices orci. Maecenas vitae eros id justo molestie pretium sed at dolor. Nulla at nisl eget nisi sollicitudin aliquet.',
     user_id: 1
   },
@@ -23,16 +25,19 @@ const postdata = [
   },
   {
     title: 'Day 1 of my remote job hits different... here is why.',
+
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet elementum leo. Fusce eget elit dictum, cursus dolor eget, ornare ipsum. Nunc in neque euismod, volutpat magna eget, ultrices orci. Maecenas vitae eros id justo molestie pretium sed at dolor. Nulla at nisl eget nisi sollicitudin aliquet.',
     user_id: 7
   },
   {
     title: 'Challenges of going through a Bootcamp.',
+
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet elementum leo. Fusce eget elit dictum, cursus dolor eget, ornare ipsum. Nunc in neque euismod, volutpat magna eget, ultrices orci. Maecenas vitae eros id justo molestie pretium sed at dolor. Nulla at nisl eget nisi sollicitudin aliquet.',
     user_id: 4
   },
   {
     title: ' The day in the life of a Fullstack Developer.',
+
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet elementum leo. Fusce eget elit dictum, cursus dolor eget, ornare ipsum. Nunc in neque euismod, volutpat magna eget, ultrices orci. Maecenas vitae eros id justo molestie pretium sed at dolor. Nulla at nisl eget nisi sollicitudin aliquet.',
     user_id: 1
   },
