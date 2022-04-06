@@ -92,6 +92,26 @@ right: 50;
   transition-property: color,background-color;
   font-family:'Lato', sans-serif;;
 }
+.contact-icon{
+  width:60px;
+  height:60px;
+  background-color: lightcoral;
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-image: url('/stylesheets/images/commenting.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  cursor: pointer;
+  z-index: 2;
+}
+.contact-icon-active {
+  
+}
+
+
 /* .uk-input, .uk-select, .uk-textarea {
   max-width: 100%;
   width: 100%;
