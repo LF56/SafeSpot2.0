@@ -18,8 +18,8 @@ https://safespotblog.herokuapp.com/dashboard/
 To install locally, clone or download the repo, then run npm install to install all dependencies. To start the server, simply run 'npm start'
 
 ## Screenshots
-![](public/stylesheets/images/background-sun.jpg)
-![](public/stylesheets/images/hotlineNEW.png)
+![](public/stylesheets/images/safespot.png)
+
 
 
 ## Installations
