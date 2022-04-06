@@ -49,7 +49,10 @@ h1 {
     width: 100%;
     color: black;
     text-align: center;
+    display: flex;
+  justify-content: space-between;
 }
+
 .uk-position-center {
   top: calc(50% - var(--uk-position-margin-offset));
   left: calc(50% - var(--uk-position-margin-offset));
