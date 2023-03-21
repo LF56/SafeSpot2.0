@@ -18,7 +18,7 @@ const sess = {
     db: sequelize
   })
 };
-//server
+//server start up test
 app.use(session(sess));
 const helpers = require('./utils/helpers');
 const hbs = exphbs.create({ helpers });
